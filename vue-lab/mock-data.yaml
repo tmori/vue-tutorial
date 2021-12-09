@@ -8,9 +8,15 @@ servers:
   - url: http://petstore.swagger.io/
 paths:
   /api/translate:
-    get:
-      summary: translation
-      operationId: translation
+    post:
+      summary: post translation
+      operationId: postTranslation
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TranslationRequest'
+        required: true      
       responses:
         '200':
           description: translation
@@ -26,6 +32,13 @@ paths:
                 $ref: "#/components/schemas/Error"
 components:
   schemas:
+    TranslationRequest:
+      required:
+        - target
+      properties:
+        target:
+          type: string
+          example: "hello world"
     TranslationResponse:
       required:
         - detectedLanguage
@@ -34,13 +47,13 @@ components:
       properties:
         detectedLanguage:
           type: string
-          example: "hello"
+          example: "英語"
         translatedText:
           type: string
-          example: "hello"
+          example: "はろーわーるど"
         translatedLanguage:
           type: string
-          example: "hello"
+          example: "日本語"
     Error:
       required:
         - code
