@@ -35,8 +35,12 @@ export default Vue.extend({
     },
     // Azure Text Translator APIの実行
     async invokeTranslator(text: string): Promise<TranslatorResult> {
-      const res: AxiosResponse = await axios.get(
-        "http://" + this.apiPrefix + "/api/translate");
+      const res: AxiosResponse = await axios.post(
+        "http://" + this.apiPrefix + "/api/translate", 
+        {
+          target: text
+        }
+      );
       return res.data;
     }
   }
