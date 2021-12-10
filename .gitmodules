@@ -1,0 +1,3 @@
+[submodule "Third_Party/tinymce-sample"]
+	path = Third_Party/tinymce-sample
+	url = https://github.com/mahaker/tinymce-tutorial.git

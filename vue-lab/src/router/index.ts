@@ -4,6 +4,7 @@ import Home from '../views/Home.vue'
 import Table from '../views/Table.vue'
 import Form from '../views/Form.vue'
 import Translator from '../views/Translator.vue'
+import TinyMCE from '../views/TinyMCE.vue'
 
 Vue.use(VueRouter)
 
@@ -27,6 +28,11 @@ const routes: Array<RouteConfig> = [
     path: '/translator',
     name: 'Translator',
     component: Translator
+  },
+  {
+    path: '/tinymce',
+    name: 'TinyMCE',
+    component: TinyMCE
   },
   {
     path: '/about',

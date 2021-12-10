@@ -16,6 +16,9 @@
             <router-link to="/translator">Translator </router-link>
           </el-menu-item>          
           <el-menu-item>
+            <router-link to="/tinymce">TinyMCE</router-link>
+          </el-menu-item>          
+          <el-menu-item>
             <router-link to="/about">About</router-link>
           </el-menu-item>
         </el-menu>
