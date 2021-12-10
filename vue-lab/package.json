@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "element-ui": "^2.4.5",
+    "tinymce": "^5.10.2",
     "@tinymce/tinymce-vue": "^3.2.8",
     "@vue/composition-api": "^1.4.0",
     "vue": "^2.6.11",

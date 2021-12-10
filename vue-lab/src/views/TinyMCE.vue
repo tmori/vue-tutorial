@@ -5,6 +5,7 @@
     </section>
     <section>
       <editor 
+        tinymce-script-src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/5.10.2/tinymce.min.js"
         v-model="content"
         :value = "content"
         :init="{
@@ -27,7 +28,8 @@
     </section>    
   </div>
 </template>
-<script lang="ts" >
+
+<script lang="ts">
 import Vue from "vue";
 import Editor from '@tinymce/tinymce-vue';
 
@@ -52,5 +54,4 @@ export default Vue.extend({
 .translator {
   text-align: left;
 }
-
 </style>
