@@ -20,7 +20,7 @@ export default Vue.extend({
   data() {
     return {
       target: new TranslatorForm(),
-      apiPrefix: "172.18.21.116:8001"
+      apiPrefix: "localhost:8080"
     };
   },
   methods: {
